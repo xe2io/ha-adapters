@@ -33,8 +33,8 @@ var Flags = []cli.Flag{
 func BuildClientFromFlags(c *cli.Context) (*comms.Mqtt, error) {
 	var (
 		uri      = c.String("mqtt-uri")
-		username = c.String("username")
-		password = c.String("password")
+		username = c.String("mqtt-username")
+		password = c.String("mqtt-password")
 		qos      = c.Int("qos")
 	)
 
